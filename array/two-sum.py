@@ -1,15 +1,8 @@
-class Solution(object):
-    def twoSum(self, nums, target):
-        """
-        :type nums: List[int]
-        :type target: int
-        :rtype: List[int]
-        """
-        number_map = {}
+class Solution:
+    def twoSum(self, nums: List[int], target: int) -> List[int]:
+        pair_idx = {}
 
         for i, num in enumerate(nums):
-            diff = target - num
-            if diff in number_map:
-                return [i, number_map[diff]]
-            number_map[num] = i
-        return None
+            if target - num in pair_idx:
+                return [i, pair_idx[target - num]]
+            pair_idx[num] = i
