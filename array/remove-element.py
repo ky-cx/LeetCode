@@ -5,4 +5,4 @@ class Solution:
             if num != val:
                 nums[k] = num
                 k +=1
-            return k 
+        return k 
