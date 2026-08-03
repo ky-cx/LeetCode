@@ -4,5 +4,5 @@ class Solution:
         for num in nums:
             if num != val:
                 nums[k] = num
-                k +=1
-        return k 
+                k += 1
+        return k
